@@ -24,6 +24,7 @@ StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=rocketchat
 User=rocketchat
+Environment=NODE_OPTIONS=--max_old_space_size=16144
 Environment=MONGO_URL=mongodb://localhost:27017/rocketchat?replicaSet=rs01 MONGO_OPLOG_URL=mongodb://localhost:27017/local?replicaSet=rs01 ROOT_URL=http://$yourhostname:3000/ PORT=3000
 [Install]
 WantedBy=multi-user.target
