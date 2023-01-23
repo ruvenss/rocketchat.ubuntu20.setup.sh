@@ -7,7 +7,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD7
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 sudo apt-get -y update && sudo apt-get install -y curl && curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt-get install -y build-essential mongodb-org nodejs graphicsmagick
-sudo npm install -g inherits n && sudo n 12.14.0
+sudo npm install -g inherits n && sudo n 14.19.3
 curl -L https://releases.rocket.chat/latest/download -o /tmp/rocket.chat.tgz
 tar -xzf /tmp/rocket.chat.tgz -C /tmp
 cd /tmp/bundle/programs/server && npm install
